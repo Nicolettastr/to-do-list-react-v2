@@ -1,12 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-align: center;
+}
 
-/* 
+.taskMargin {
+    background-color: #555;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px 140px 10px 15px;
+    text-align: left;
+    font-size: 22px;
+    position: relative;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.taskMargin div {
+    display: flex;
+    align-items: center;
+}
 
-*/
+.indexSpan {
+    color: #999;
+    border: 1px solid #999;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    display: flex;
+    text-align: center;
+    font-size: 14px;
+    margin-right: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+.taskSection .done .taskItem {
+    text-decoration: line-through;
+    opacity: 0.3;
+    flex: 1;
+}
+
+.icons {
+    position: absolute;
+    display: flex;
+    width: auto;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.icons span {
+    color: aqua;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0 6px;
+}
+
+.icons span:hover {
+    color: red;
+}
+
+.inputSection input {
+    margin-left: 15px;
+}
+
+.updateBtns button{
+    margin-right: 5px;
+}
+
+.addBtns{
+    padding: 15px 0;
+}
+
