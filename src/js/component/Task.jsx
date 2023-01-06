@@ -25,13 +25,12 @@ const Task = (props) => {
         <>
             <div className={`${props.item.done ? "done" : ""} taskMargin`}>
 				<div>
-				    <li className="indexSpan">{props.index + 1}</li>
-				    <li className="taskItem" key={props.index}>{props.item.label}</li>
+					<span className="status" onClick={handleId} title="Completed/ Not Completed"><FontAwesomeIcon icon={props.faCircleCheck} /></span>
+				    <li className="taskItem" key={props.index}> {props.item.label}</li>
 				<div className="icons">
 					<li>{props.item.status}</li>
 					<span className="edit" onClick={handleEditBtn} title="Edit"><FontAwesomeIcon icon={props.faPencil}/></span>
 					<span className="delete" onClick={handleDelete} title="Delete"><FontAwesomeIcon icon={props.faTrash}/></span>
-					<span className="status" onClick={handleId} title="Completed/ Not Completed"><FontAwesomeIcon icon={props.faCircleCheck} /></span>
 				</div>
 				</div>
 			</div>

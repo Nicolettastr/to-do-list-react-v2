@@ -49,26 +49,36 @@
     transform: translateY(-50%);
 }
 
-.icons span {
+.icons span,
+.status {
+    width: 35px;
+    height: 35px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    display: inline-block;
     margin: 0 6px;
 }
 
 .delete {
     color: #bc2525;
+    background-color: #f18282;
 }
 
 .delete:hover {
-    color:  #f95959;
+    color:  #f84747;
 }
 
 .status {
+    margin-right: 10px;
     color: #22559c;
+    background-color: #bae8e8;
 }
 
 .edit {
     color: #363434;
+    background-color: #afacac;
 }
 
 .status:hover {
@@ -76,7 +86,7 @@
 }
 
 .edit:hover {
-    color: #5c5757;
+    color: black;
 }
 
 .inputSection input {
