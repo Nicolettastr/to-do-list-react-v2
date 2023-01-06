@@ -7,7 +7,7 @@
 }
 
 .taskMargin {
-    background-color: #555;
+    background-color: #f2f2f2;
     border-radius: 5px;
     margin-bottom: 20px;
     padding: 10px 140px 10px 15px;
@@ -22,23 +22,22 @@
 }
 
 .indexSpan {
-    color: #999;
-    border: 1px solid #999;
+    color:  #22559c;
+    border: 1px solid  #22559c;
+    background-color: #22559c;
     border-radius: 50%;
     width: 26px;
     height: 26px;
-    display: flex;
-    text-align: center;
-    font-size: 14px;
     margin-right: 8px;
-    align-items: center;
-    justify-content: center;
 }
 
 .taskSection .done .taskItem {
     text-decoration: line-through;
-    opacity: 0.3;
-    flex: 1;
+    opacity: 0.2;
+}
+
+.done {
+    background-color: #bbe4e9;
 }
 
 .icons {
@@ -51,14 +50,33 @@
 }
 
 .icons span {
-    color: aqua;
     cursor: pointer;
     display: inline-block;
     margin: 0 6px;
 }
 
-.icons span:hover {
-    color: red;
+.delete {
+    color: #bc2525;
+}
+
+.delete:hover {
+    color:  #f95959;
+}
+
+.status {
+    color: #22559c;
+}
+
+.edit {
+    color: #363434;
+}
+
+.status:hover {
+    color: #22b2da;
+}
+
+.edit:hover {
+    color: #5c5757;
 }
 
 .inputSection input {
@@ -72,4 +90,37 @@
 .addBtns{
     padding: 15px 0;
 }
+
+.updateSection {
+    margin-bottom: 15px;
+}
+
+.btnColor {
+    border: #a7cd78;
+    background-color: #a7cd78;
+}
+
+.btnColor:hover {
+    border: #a1dd70;
+    background-color: #a1dd70;
+}
+
+.btnColorCancel {
+    border: #bc2525;
+    background-color: #bc2525;
+}
+
+.pending {
+    height: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 15px;
+    border: #a7cd78;
+    border-radius: 8px;
+    background-color: #a7cd78;
+    color: white;
+    font-size: 20px;
+}
+
 

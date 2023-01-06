@@ -26,7 +26,7 @@ const AddTaskBtn = (props) => {
 				<div className="col-auto ">
 					<button 
                     onClick={props.addTask}
-                    className="btn btn-lg btn-success">
+                    className="btn btn-lg btn-success btnColor">
                         Add Task
                     </button>
 				</div>
